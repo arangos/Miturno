@@ -1,4 +1,11 @@
 <?php
+
+// $Site = new SiteController("Site");
+// $Site->actionFunctionAtender();
+	
+// ?>
+
+<?php
 /* @var $this SiteController */
 $this->pageTitle = Yii::app ()->name;
 

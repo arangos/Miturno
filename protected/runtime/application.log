@@ -2216,3 +2216,1149 @@ Stack trace:
 REQUEST_URI=/yii/miturno/index.php/site/atender
 in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (119)
 in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:41:18 [error] [php] Undefined offset: 0 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:103)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (103)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:42:48 [error] [php] Undefined offset: 0 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:105)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (105)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:42:49 [error] [php] Undefined offset: 0 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:105)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (105)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:42:52 [error] [php] Undefined offset: 0 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:105)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (105)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:23 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:24 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:24 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:24 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:24 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:24 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:24 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:44:25 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:46:30 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:125)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (125)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:46:31 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:125)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (125)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:46:32 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:125)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (125)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:46:32 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:125)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (125)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:17 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:18 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:19 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:19 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:19 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:19 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:19 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:20 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:20 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:20 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:20 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 16:48:20 [error] [php] Undefined variable: codigo (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (133)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 18:36:32 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\views\site\atender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(139): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\views\site\atender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (139)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/16 20:21:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('clientes/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/miturno/index.php/clientes/admin
+HTTP_REFERER=http://localhost/yii/miturno/index.php/clientes/create
+---
+2014/09/28 17:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perra".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perra')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/perra
+---
+2014/09/28 17:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perra.php".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perra.php')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/perra.php
+---
+2014/09/28 17:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perra".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('perra')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 17:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perra.php".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('perra.php')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra.php')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra.php')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra.php
+---
+2014/09/28 17:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/index.php/site/atender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 17:46:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/index.php/site/atender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:06:34 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:144)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (144)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 18:06:40 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:144)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (144)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 18:06:42 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:144)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (144)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 18:10:51 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('perra', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:10:53 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('perra', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:10:53 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('perra', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:10:53 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('perra', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:10:54 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('perra', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:11:30 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('atender', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:11:31 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('atender', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:11:31 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('atender', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:11:37 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "perra".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): CComponent->__call('perra', Array)
+#1 C:\wamp\www\yii\miturno\protected\views\site\perra.php(44): SiteController->perra('atender', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#6 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#8 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:18:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perra".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perra')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:18:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perra".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perra')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:18:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perra".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perra')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perra".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perra')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:19:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "SiteController.actionFunctionAtender()".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('SiteController....')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('SiteController....')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/SiteContro...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/SiteController.actionFunctionAtender()
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "SiteController->actionFunctionAtender()".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('SiteController-...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('SiteController-...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/SiteContro...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/SiteController-%3EactionFunctionAtender()
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:22:13 [error] [php] Missing argument 1 for CController::__construct(), called in C:\wamp\www\yii\miturno\protected\views\site\perra.php on line 3 and defined (C:\wamp\www\yii\framework\web\CController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/perra
+in C:\wamp\www\yii\miturno\protected\views\site\perra.php (3)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 18:25:07 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "atender".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('atender', Array, true)
+#1 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(135): CController->render('atender', Array)
+#2 C:\wamp\www\yii\miturno\protected\views\site\perra.php(4): SiteController->actionFunctionAtender()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#7 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:25:30 [error] [php] Missing argument 1 for CController::__construct(), called in C:\wamp\www\yii\miturno\protected\views\site\perra.php on line 3 and defined (C:\wamp\www\yii\framework\web\CController.php:110)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/perra
+in C:\wamp\www\yii\miturno\protected\views\site\perra.php (3)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 18:35:47 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "atender".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('atender', Array, true)
+#1 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(136): CController->render('atender', Array)
+#2 C:\wamp\www\yii\miturno\protected\views\site\perra.php(4): SiteController->actionFunctionAtender()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', NULL, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#7 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#9 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:36:21 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "perra".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('perra', NULL, true)
+#1 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('perra')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPerra()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('perra')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/perra')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/miturno/index.php/site/perra
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/perra
+---
+2014/09/28 18:36:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "callAtender".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('callAtender')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('callAtender')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/callAtende...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:37:06 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "callAtender".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('callAtender', NULL, true)
+#1 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): CController->render('callAtender')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#3 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('callAtender')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/callAtende...')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/09/28 18:48:38 [error] [php] Undefined variable: set (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:109)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (109)
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (4)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+2014/09/28 18:48:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "s".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('s')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/s
+---
+2014/09/28 18:48:47 [error] [php] Undefined variable: set (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:109)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (109)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 18:49:08 [error] [php] Undefined variable: set (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:113)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (113)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 19:03:59 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (21)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 19:05:10 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (21)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 19:05:14 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (21)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 19:05:19 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (21)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 19:05:19 [error] [php] Undefined variable: turnoActual (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(98): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (21)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (98)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 19:48:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 19:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pedirTurno.php".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('pedirTurno.php')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('pedirTurno.php')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pedirTurno...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno.php
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/index
+---
+2014/09/28 20:00:19 [error] [php] Array to string conversion (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:114)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (114)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:01:04 [error] [php] Array to string conversion (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (118)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:02:13 [error] [php] Undefined offset: 2 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:02:24 [error] [php] Undefined offset: 2 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:02:33 [error] [php] Undefined offset: 2 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:02:49 [error] [php] Undefined offset: 2 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:02:52 [error] [php] Undefined offset: 2 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:116)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (116)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:03:44 [error] [php] Undefined index: Turno (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:117)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (117)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:06:19 [error] [php] Undefined offset: 0 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:119)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (119)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:06:31 [error] [php] Undefined offset: 0 (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:119)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (119)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/28 20:07:47 [error] [php] Undefined variable: sqlTurnoActual (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:115)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/pedirTurno
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (115)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/09/29 22:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pedirTurno".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pedirTurno')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/pedirTurno
+HTTP_REFERER=http://localhost/yii/miturno/index.php/
+---

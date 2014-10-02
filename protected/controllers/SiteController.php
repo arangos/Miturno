@@ -94,27 +94,83 @@ class SiteController extends Controller {
 		Yii::app ()->user->logout ();
 		$this->redirect ( Yii::app ()->homeUrl );
 	}
-	public function actionAtender() {
+	
+	public function actionPedirTurno(){
+		
 		$connection = Yii::app ()->db;
 		
-		$turno = TestTurnosPedidos::model ();
+		$an = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		$su = strlen($an) - 1;
+		
+		$codigo = substr($an, rand(0, $su), 1) .
+		substr($an, rand(0, $su), 1) .
+		substr($an, rand(0, $su), 1) .
+		substr($an, rand(0, $su), 1) .
+		substr($an, rand(0, $su), 1);
+		
+		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = 'dep4') and NombreDependencia = 'dep4'" );
+		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
+		
+		if ($sqlUltimoTurno != null) {
+			$turnoNuevo = $sqlUltimoTurno[0] ['Turno']+1;
+		}else{
+			$turnoNuevo = 1;
+		}
+	
+		$logobj = new TestTurnosPedidos();
+		$logobj->Cod = $codigo;
+		$logobj->NombreDependencia = 'dep4';
+		$logobj->Turno = $turnoNuevo;
+		$logobj->insert();
+		
+		echo $codigo."-".$turnoNuevo;
+	}
+	
+	public function actionCallAtender() {
+		
+		$connection = Yii::app ()->db;
+		
+		$codigo = "";
 		
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select min(Turno) from test_turnos_pedidos where NombreDependencia = 'dep1') and NombreDependencia = 'dep1'" );
+    select min(Turno) from test_turnos_pedidos where NombreDependencia = 'dep4') and NombreDependencia = 'dep4'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
-		$sqlTurnoActual = $sqlTurnoActual [0];
 		
-		$sqlTurnosEspera = new CSqlDataProvider ("SELECT COUNT(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia = 'dep1';");
-		$sqlTurnosEspera = $sqlTurnosEspera->getData();
-		$sqlTurnosEspera = $sqlTurnosEspera[0];
+		if ($sqlTurnoActual != null) {
+			$sqlTurnoActual = $sqlTurnoActual [0];
+			$turnoActual = $sqlTurnoActual ['Turno'];
+			$codigo = $sqlTurnoActual ['Cod'];
+			
+			$connection->createCommand ()->delete ( 'test_turnos_pedidos', 'Cod=:Cod', array (
+					':Cod' => $codigo 
+			) );
+		} else {
+			$turnoActual = "";
+		}
 		
-		$turnoActual = $sqlTurnoActual ['Turno'];
-		$codigo = $sqlTurnoActual ['Cod'];
-		$turnosEspera = $sqlTurnosEspera['COUNT(NombreDependencia)'];
+		$sqlTurnosEspera = new CSqlDataProvider ( "SELECT COUNT(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia = 'dep4';" );
+		$sqlTurnosEspera = $sqlTurnosEspera->getData ();
 		
-		$sqlDELETE = new CSqlDataProvider ("DELETE FROM test_turnos_pedidos WHERE Cod = '".$codigo."';");
+		if ($sqlTurnosEspera != null) {
+			$sqlTurnosEspera = $sqlTurnosEspera [0];
+			$turnosEspera = $sqlTurnosEspera ['COUNT(NombreDependencia)'];
+		} else {
+			$turnosEspera = "";
+		}
 		
+		$this->render ( 'callAtender', array (
+				'turnoActual' => $turnoActual,
+				'codigo' => $codigo,
+				'turnosEspera' => $turnosEspera 
+		) );
 		
+	}
+	
+	public function actionAtender() {
+		$codigo = "";
+		$turnoActual = "";
+		$turnosEspera = "";
 		
 		$this->render ( 'atender', array (
 				'turnoActual' => $turnoActual,
