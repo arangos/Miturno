@@ -3362,3 +3362,333 @@ Stack trace:
 REQUEST_URI=/yii/miturno/index.php/pedirTurno
 HTTP_REFERER=http://localhost/yii/miturno/index.php/
 ---
+2014/10/02 17:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "callAtender3".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('callAtender3')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('callAtender3')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/callAtende...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/callAtender3
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/02 17:41:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "callAtenderpopo".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('callAtenderpopo')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('callAtenderpopo')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/callAtende...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/callAtenderpopo
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/02 17:46:26 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(166): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (166)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/02 17:47:06 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(166): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (166)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/02 17:57:13 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/02 18:29:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "callAntender".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('callAntender')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('callAntender')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/callAntend...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/miturno/index.php/site/callAntender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/02 18:29:30 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/02 18:35:11 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/02 20:09:35 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:48:59 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:49:47 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:51:17 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:52:36 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:54:01 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(168): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (168)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:54:06 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(168): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (168)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:54:09 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(168): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (168)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:54:15 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(168): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (168)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:55:17 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(168): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (168)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/08 19:55:38 [error] [php] Undefined index: selectVar (C:\wamp\www\yii\miturno\protected\views\site\callAtender.php:14)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(168): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionCallAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\views\site\callAtender.php (14)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (168)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/09 16:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/actionCallAtende".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/controller/actionCallAtende?param1=value1
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/09 16:39:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/actionCallAtender".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/controller/actionCallAtender?param1=value1
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/09 16:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/actionCallAtender".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/controller/actionCallAtender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/09 16:41:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/action".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/controller/action
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/09 16:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/actionCallAtender".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/acti...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\miturno\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/miturno/index.php/controller/actionCallAtender
+HTTP_REFERER=http://localhost/yii/miturno/index.php/site/atender
+---
+2014/10/09 17:56:16 [error] [php] Undefined variable: var (C:\wamp\www\yii\miturno\protected\views\site\atender.php:10)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yii\miturno\protected\controllers\SiteController.php(183): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAtender()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/atender
+in C:\wamp\www\yii\miturno\protected\views\site\atender.php (10)
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (183)
+in C:\wamp\www\yii\miturno\index.php (13)
+2014/10/09 17:56:51 [error] [php] Undefined index: testvar (C:\wamp\www\yii\miturno\protected\controllers\SiteController.php:135)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\yii\miturno\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/miturno/index.php/site/callAtender
+in C:\wamp\www\yii\miturno\protected\controllers\SiteController.php (135)
+in C:\wamp\www\yii\miturno\index.php (13)

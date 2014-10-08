@@ -10,8 +10,19 @@
 $this->pageTitle = Yii::app ()->name;
 
 $cliente = Clientes::model ()->findAll ();
+
+$var = $_POST['selectVar'];
+
+global $testvar;
+$testvar = ''.$var;
+
 // print_r($cliente);
 ?>
+<form action="callAtender" method="post">
+
+<h2> Taquilla: <?php echo " ".$var?></h2>
+
+<input type="text" name="selectVar" style="display: none;" value="<?php echo $var;?>">
 
 
 
@@ -24,23 +35,23 @@ $cliente = Clientes::model ()->findAll ();
 	<hr>
 	<div align="center" >
 	
-	<form action="callAtender" method="post">
+	
 		 <button type="submit" id="boton" style="height:60px"  >Llamar Turno</button>
 <!-- 		 onclick="window.location.reload()" -->
-		 </form>
+		 
 	</div>
 	
 </div>
-
+</form>
 <!-- window.location.reload() -->
 
 
 <div style=" width: 48%; float: left">
 <div align="center" >
 		<h2>Codigo</h2>
-		<h1> <?php echo $codigo; ?></h1>
+		<h1> <?php echo $codigo;?></h1>
 	</div>
-	
+	 	
 <hr>
 
 <!-- 	<div align="center" style="border: 2px solid gree -->

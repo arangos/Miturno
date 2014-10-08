@@ -133,8 +133,15 @@ class SiteController extends Controller {
 		
 		$codigo = "";
 		
+		if(isset($_POST['selectVar'])){
+			$var = $_POST['selectVar'];
+		}else{
+			$var = $GLOBALS['testvar'];
+		}
+// 		$var = "dep4";
+		
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select min(Turno) from test_turnos_pedidos where NombreDependencia = 'dep4') and NombreDependencia = 'dep4'" );
+    select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') and NombreDependencia = '".$var."'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 		
 		if ($sqlTurnoActual != null) {
@@ -149,7 +156,7 @@ class SiteController extends Controller {
 			$turnoActual = "";
 		}
 		
-		$sqlTurnosEspera = new CSqlDataProvider ( "SELECT COUNT(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia = 'dep4';" );
+		$sqlTurnosEspera = new CSqlDataProvider ( "SELECT COUNT(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia = '".$var."';" );
 		$sqlTurnosEspera = $sqlTurnosEspera->getData ();
 		
 		if ($sqlTurnosEspera != null) {
@@ -171,6 +178,8 @@ class SiteController extends Controller {
 		$codigo = "";
 		$turnoActual = "";
 		$turnosEspera = "";
+		
+		
 		
 		$this->render ( 'atender', array (
 				'turnoActual' => $turnoActual,
