@@ -138,7 +138,7 @@ class SiteController extends Controller {
 		}else{
 			$var = $GLOBALS['testvar'];
 		}
-// 		$var = "dep4";
+// 		aqui
 		
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
     select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') and NombreDependencia = '".$var."'" );
