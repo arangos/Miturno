@@ -1,4 +1,19 @@
 <?php
+
+require 'vendor/autoload.php';
+
+use Parse\ParseClient;
+use Parse\ParseObject;
+use Parse\ParseInstallation;
+use Parse\ParseQuery;
+use Parse\ParseACL;
+use Parse\ParsePush;
+use Parse\ParseUser;
+use Parse\ParseException;
+use Parse\ParseAnalytics;
+use Parse\ParseFile;
+use Parse\ParseCloud;
+
 class SiteController extends Controller {
 	/**
 	 * Declares class-based actions.
@@ -189,6 +204,24 @@ class SiteController extends Controller {
 		} else {
 			$turnosEspera = "";
 		}
+		
+		ParseClient::initialize('30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo',
+				'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
+				'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
+		
+		$data = array("alert" => "Estas Proximo A Ser Atendido");
+		
+		$query = ParseInstallation::query();
+		$query->equalTo("channels", "a");
+ 		$query->equalTo("device_id", $codigo);
+		
+		
+		$query = ParsePush::send(array(
+				"where" => $query,
+				"data" => $data
+		));
+		
+		
 		
 		$this->render ( 'callAtender', array (
 				'turnoActual' => $turnoActual,
