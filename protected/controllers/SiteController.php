@@ -116,7 +116,7 @@ class SiteController extends Controller {
 		
 		
 		
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia" );
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT distinct(NombreDependencia) FROM test_turnos_pedidos" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 	
 		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
@@ -212,8 +212,8 @@ class SiteController extends Controller {
 		$data = array("alert" => "Estas Proximo A Ser Atendido");
 		
 		$query = ParseInstallation::query();
-		$query->equalTo("channels", "a");
- 		$query->equalTo("device_id", $codigo);
+	//	$query->equalTo("channels", "a");
+ 		$query->equalTo("turnos_espera", $turnosEspera);
 		
 		
 		$query = ParsePush::send(array(
