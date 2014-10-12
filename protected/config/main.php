@@ -56,7 +56,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=miturno',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'admin',
 			'charset' => 'utf8',
 		),
 		
