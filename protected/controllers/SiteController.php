@@ -101,7 +101,7 @@ class SiteController extends Controller {
 		
 		
 		
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT distinct(NombreDependencia) FROM test_turnos_pedidos" );
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 	
 		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
