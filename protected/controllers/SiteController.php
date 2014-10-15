@@ -212,8 +212,9 @@ class SiteController extends Controller {
 		$data = array("alert" => "Estas Proximo A Ser Atendido");
 		
 		$query = ParseInstallation::query();
-		$query->equalTo("channels", "a");
- 		$query->equalTo("device_id", $codigo);
+		//$query->equalTo("channels", "a");
+ 		
+		$query->equalTo("turnos_espera", $turnosEspera);
 		
 		
 		$query = ParsePush::send(array(
