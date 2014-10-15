@@ -209,18 +209,12 @@ class SiteController extends Controller {
 				'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
 				'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
 		
-		$data = array("alert" => "Estas Proximo A Ser Atendido");
+		$data = array("alert" => "Estas proximo a ser atendido");
 		
 		$query = ParseInstallation::query();
-<<<<<<< HEAD
-		//$query->equalTo("channels", "a");
- 		
+
+		$query->equalTo("channels", $var);
 		$query->equalTo("turnos_espera", $turnosEspera);
-=======
-	//	$query->equalTo("channels", "a");
- 		$query->equalTo("turnos_espera", $turnosEspera);
->>>>>>> 3ade43015a4e9c6199a81a9e8f60d50fa7631b54
-		
 		
 		$query = ParsePush::send(array(
 				"where" => $query,
