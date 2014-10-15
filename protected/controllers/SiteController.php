@@ -182,7 +182,18 @@ class SiteController extends Controller {
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
     select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') and NombreDependencia = '".$var."'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
-		
+//------------------------------------------------------------
+		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, (SELECT Turno t FROM test_turnos_pedidos x WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p WHERE NombreDependencia = '".$var."' AND Turno = p.t +2");
+		 $sqlTurnoProximo = $sqlTurnoProximo->getData ();
+		if ($sqlTurnoProximo != null) {
+			$sqlTurnoProximo = $sqlTurnoProximo [0];
+			$turnoProximo = $sqlTurnoProximo ['Turno'];
+			$codigoProximo = $sqlTurnoProximo ['Cod'];
+		} else {
+			$turnoProximo = "";
+			$codigoProximo = null;
+		}	
+//------------------------------------------------------------
 		if ($sqlTurnoActual != null) {
 			$sqlTurnoActual = $sqlTurnoActual [0];
 			$turnoActual = $sqlTurnoActual ['Turno'];
@@ -213,9 +224,12 @@ class SiteController extends Controller {
 		
 		$query = ParseInstallation::query();
 
-		$query->equalTo("channels", $var);
-		$query->equalTo("turnos_espera", $turnosEspera);
-		
+	//	$query->equalTo("channels", "a");
+	//	$query->equalTo("turnos_espera", $turnosEspera);
+		if($codigoProximo != null)
+			$query->equalTo("device_id", $codigoProximo);
+		$query->equalTo("device_id", $codigo);
+
 		$query = ParsePush::send(array(
 				"where" => $query,
 				"data" => $data
