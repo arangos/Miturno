@@ -159,7 +159,33 @@ class SiteController extends Controller {
 		}else{
 			$turnoNuevo = 1;
 		}
-	
+		//----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
+		
+		$dataProximo = array("alert" => "Estas proximo a ser atendido");
+		
+		$queryProximo = ParseInstallation::query();
+		
+		$queryProximo->equalTo("device_id", $codigoProximo);
+			
+		ParsePush::send(array(
+				"where" => $queryProximo,
+				"data" => $dataProximo
+		));
+		
+		
+		//----------Manda Push Al Que Se Voy A Atender En Este Momento----------
+		$dataActual = array("alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender");
+		
+		$queryActual = ParseInstallation::query();
+		
+		$queryActual->equalTo("device_id", $codigo);
+		
+		ParsePush::send(array(
+				"where" => $queryActual,
+				"data" => $dataActual
+		));
+		
+		
 		$logobj = new TestTurnosPedidos();
 		$logobj->Cod = $codigo;
 		$logobj->NombreDependencia = $dato;
@@ -173,6 +199,10 @@ class SiteController extends Controller {
 		
 		$connection = Yii::app ()->db;
 		
+		ParseClient::initialize('30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo',
+				'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
+				'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
+		
 		$codigo = "";
 		
 		if(isset($_POST['selectVar'])){
@@ -180,14 +210,27 @@ class SiteController extends Controller {
 		}else{
 			$var = $GLOBALS['testvar'];
 		}
-// 		aqui algo mas...
+//----------Busca En La BD El Turno Que Se Va A Atender En Este Momento----------	
 		
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') and NombreDependencia = '".$var."'" );
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos 
+						WHERE Turno = (select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') 
+						and NombreDependencia = '".$var."'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
+		
+//----------Busca En La BD El Turno Que Se Va A Atender Despues Del Actual----------	
+		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, 
+						(SELECT Turno t FROM test_turnos_pedidos x 
+						WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
+						WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
+
 //------------------------------------------------------------
-		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, (SELECT Turno t FROM test_turnos_pedidos x WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
+		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, 
+				(SELECT Turno t FROM test_turnos_pedidos x 
+				WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
+				WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
 		 $sqlTurnoProximo = $sqlTurnoProximo->getData ();
+		 
+//----------Valida Que Hallan Mas Turnos Adelante----------
 		if ($sqlTurnoProximo != null) {
 			$sqlTurnoProximo = $sqlTurnoProximo [0];
 			$turnoProximo = $sqlTurnoProximo ['Turno'];
@@ -196,7 +239,8 @@ class SiteController extends Controller {
 			$turnoProximo = "";
 			$codigoProximo = null;
 		}	
-//------------------------------------------------------------
+				
+//----------Muestra Al Funcionario El Turno - Codigo Y Turnos En Espera----------
 		if ($sqlTurnoActual != null) {
 			$sqlTurnoActual = $sqlTurnoActual [0];
 			$turnoActual = $sqlTurnoActual ['Turno'];
@@ -218,27 +262,35 @@ class SiteController extends Controller {
 		} else {
 			$turnosEspera = "";
 		}
+//----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------		
 		
-		ParseClient::initialize('30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo',
-				'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
-				'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
+		$dataProximo = array("alert" => "Estas proximo a ser atendido");
 		
-		$data = array("alert" => "Estas proximo a ser atendido");
+		$queryProximo = ParseInstallation::query();
 		
-		$query = ParseInstallation::query();
+		$queryProximo->equalTo("device_id", $codigoProximo);
+			
+		ParsePush::send(array(
+				"where" => $queryProximo,
+				"data" => $dataProximo
+		));
 
-	//	$query->equalTo("channels", "a");
-	//	$query->equalTo("turnos_espera", $turnosEspera);
-		if($codigoProximo != null)
-			$query->equalTo("device_id", $codigoProximo);
-		$query->equalTo("device_id", $codigo);
-
-		$query = ParsePush::send(array(
-				"where" => $query,
-				"data" => $data
+		
+//----------Manda Push Al Que Se Voy A Atender En Este Momento----------		
+		$dataActual = array("alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender");
+		
+		$queryActual = ParseInstallation::query();
+		
+		$queryActual->equalTo("device_id", $codigo);
+		
+		ParsePush::send(array(
+				"where" => $queryActual,
+				"data" => $dataActual
 		));
 		
+
 		
+//------------------------------------------------------------		
 		
 		$this->render ( 'callAtender', array (
 				'turnoActual' => $turnoActual,
