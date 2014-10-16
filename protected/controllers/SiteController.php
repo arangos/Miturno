@@ -137,6 +137,9 @@ class SiteController extends Controller {
 	}
 	public function actionPedirTurno(){
 		
+		$dato = $_POST['nombreDep'];
+		echo $dato;
+		
 		$connection = Yii::app ()->db;
 		
 		$an = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -149,7 +152,7 @@ class SiteController extends Controller {
 		substr($an, rand(0, $su), 1);
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = 'dep2') and NombreDependencia = 'dep2'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato ."') and NombreDependencia = ''" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
