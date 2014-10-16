@@ -163,7 +163,7 @@ class SiteController extends Controller {
 	
 		$logobj = new TestTurnosPedidos();
 		$logobj->Cod = $codigo;
-		$logobj->NombreDependencia = 'dep2';
+		$logobj->NombreDependencia = $dato;
 		$logobj->Turno = $turnoNuevo;
 		$logobj->insert();
 		
