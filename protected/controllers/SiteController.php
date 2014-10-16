@@ -116,7 +116,7 @@ class SiteController extends Controller {
 		
 		
 		
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT distinct(NombreDependencia) FROM test_turnos_pedidos" );
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia" )
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 	
 		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
@@ -127,6 +127,7 @@ class SiteController extends Controller {
 			$tur=$sqlTurnoEspera[0]['count(NombreDependencia)'];
 			
 			$json['listDep'][] = array("Dependencia"=>$dep,"Turnos"=>$tur);
+			
 			
 		}
 		
@@ -148,7 +149,7 @@ class SiteController extends Controller {
 		substr($an, rand(0, $su), 1);
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = 'dep4') and NombreDependencia = 'dep4'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = 'dep2') and NombreDependencia = 'dep2'" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
@@ -159,7 +160,7 @@ class SiteController extends Controller {
 	
 		$logobj = new TestTurnosPedidos();
 		$logobj->Cod = $codigo;
-		$logobj->NombreDependencia = 'dep4';
+		$logobj->NombreDependencia = 'dep2';
 		$logobj->Turno = $turnoNuevo;
 		$logobj->insert();
 		
@@ -183,7 +184,7 @@ class SiteController extends Controller {
     select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') and NombreDependencia = '".$var."'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 //------------------------------------------------------------
-		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, (SELECT Turno t FROM test_turnos_pedidos x WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p WHERE NombreDependencia = '".$var."' AND Turno = p.t +2");
+		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, (SELECT Turno t FROM test_turnos_pedidos x WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
 		 $sqlTurnoProximo = $sqlTurnoProximo->getData ();
 		if ($sqlTurnoProximo != null) {
 			$sqlTurnoProximo = $sqlTurnoProximo [0];
