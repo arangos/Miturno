@@ -116,7 +116,7 @@ class SiteController extends Controller {
 		
 		
 		
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT distinct(NombreDependencia) FROM test_turnos_pedidos" );
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia");
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 	
 		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
@@ -128,6 +128,7 @@ class SiteController extends Controller {
 			
 			$json['listDep'][] = array("Dependencia"=>$dep,"Turnos"=>$tur);
 			
+			
 		}
 		
 
@@ -135,6 +136,9 @@ class SiteController extends Controller {
 		
 	}
 	public function actionPedirTurno(){
+		
+		$dato = $_POST['nombreDep'];
+		echo $dato;
 		
 		$connection = Yii::app ()->db;
 		
@@ -148,7 +152,7 @@ class SiteController extends Controller {
 		substr($an, rand(0, $su), 1);
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = 'dep4') and NombreDependencia = 'dep4'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato ."') and NombreDependencia = ''" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
@@ -156,10 +160,36 @@ class SiteController extends Controller {
 		}else{
 			$turnoNuevo = 1;
 		}
-	
+		//----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
+		
+		$dataProximo = array("alert" => "Estas proximo a ser atendido");
+		
+		$queryProximo = ParseInstallation::query();
+		
+		$queryProximo->equalTo("device_id", $codigoProximo);
+			
+		ParsePush::send(array(
+				"where" => $queryProximo,
+				"data" => $dataProximo
+		));
+		
+		
+		//----------Manda Push Al Que Se Voy A Atender En Este Momento----------
+		$dataActual = array("alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender");
+		
+		$queryActual = ParseInstallation::query();
+		
+		$queryActual->equalTo("device_id", $codigo);
+		
+		ParsePush::send(array(
+				"where" => $queryActual,
+				"data" => $dataActual
+		));
+		
+		
 		$logobj = new TestTurnosPedidos();
 		$logobj->Cod = $codigo;
-		$logobj->NombreDependencia = 'dep4';
+		$logobj->NombreDependencia = $dato;
 		$logobj->Turno = $turnoNuevo;
 		$logobj->insert();
 		
@@ -193,6 +223,12 @@ class SiteController extends Controller {
 						(SELECT Turno t FROM test_turnos_pedidos x 
 						WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
 						WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
+
+//------------------------------------------------------------
+		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, 
+				(SELECT Turno t FROM test_turnos_pedidos x 
+				WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
+				WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
 		 $sqlTurnoProximo = $sqlTurnoProximo->getData ();
 		 
 //----------Valida Que Hallan Mas Turnos Adelante----------
