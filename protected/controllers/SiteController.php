@@ -151,7 +151,7 @@ class SiteController extends Controller {
 		substr($an, rand(0, $su), 1);
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato ."') and NombreDependencia = ' . $dato .'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato ."') and NombreDependencia = ' ". $dato ."'" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
@@ -159,31 +159,6 @@ class SiteController extends Controller {
 		}else{
 			$turnoNuevo = 1;
 		}
-		//----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
-		
-		$dataProximo = array("alert" => "Estas proximo a ser atendido");
-		
-		$queryProximo = ParseInstallation::query();
-		
-		$queryProximo->equalTo("device_id", $codigoProximo);
-			
-		ParsePush::send(array(
-				"where" => $queryProximo,
-				"data" => $dataProximo
-		));
-		
-		
-		//----------Manda Push Al Que Se Voy A Atender En Este Momento----------
-		$dataActual = array("alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender");
-		
-		$queryActual = ParseInstallation::query();
-		
-		$queryActual->equalTo("device_id", $codigo);
-		
-		ParsePush::send(array(
-				"where" => $queryActual,
-				"data" => $dataActual
-		));
 		
 		
 		$logobj = new TestTurnosPedidos();
@@ -193,16 +168,14 @@ class SiteController extends Controller {
 		$logobj->insert();
 		
 		echo $codigo."-".$turnoNuevo;
+		
+		
 	}
-	
+//-------------actionCallAtender()---------------------------------------	
 	public function actionCallAtender() {
 		
 		$connection = Yii::app ()->db;
-		
-		ParseClient::initialize('30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo',
-				'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
-				'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
-		
+				
 		$codigo = "";
 		
 		if(isset($_POST['selectVar'])){
@@ -222,12 +195,6 @@ class SiteController extends Controller {
 						(SELECT Turno t FROM test_turnos_pedidos x 
 						WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
 						WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
-
-//------------------------------------------------------------
-		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, 
-				(SELECT Turno t FROM test_turnos_pedidos x 
-				WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
-				WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
 		 $sqlTurnoProximo = $sqlTurnoProximo->getData ();
 		 
 //----------Valida Que Hallan Mas Turnos Adelante----------
@@ -264,6 +231,10 @@ class SiteController extends Controller {
 		}
 //----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------		
 		
+		ParseClient::initialize('30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo',
+		'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
+		'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
+		
 		$dataProximo = array("alert" => "Estas proximo a ser atendido");
 		
 		$queryProximo = ParseInstallation::query();
@@ -287,9 +258,7 @@ class SiteController extends Controller {
 				"where" => $queryActual,
 				"data" => $dataActual
 		));
-		
-
-		
+				
 //------------------------------------------------------------		
 		
 		$this->render ( 'callAtender', array (
@@ -299,7 +268,9 @@ class SiteController extends Controller {
 		) );
 		
 	}
+
 	
+//------------actionAtender()----------------------------
 	public function actionAtender() {
 		$codigo = "";
 		$turnoActual = "";
