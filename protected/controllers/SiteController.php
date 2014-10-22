@@ -288,6 +288,8 @@ class SiteController extends Controller {
 
 		$codigo = $_POST ['codigo'];
 		
+		$connection = Yii::app ()->db;
+		
 		$connection->createCommand ()->delete ( 'test_turnos_pedidos', 'Cod=:Cod', array (
 				':Cod' => $codigo
 				) );
