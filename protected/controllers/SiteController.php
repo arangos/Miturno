@@ -139,7 +139,7 @@ public function actionLogin() {
 		
 		$connection = Yii::app ()->db;
 		$json = array ();
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia where NombreEmpresa = '" +$emp+"'2");
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia where NombreEmpresa = '" .$emp."'");
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 		
 		for($var1 = 0; $var1 < count ( $sqlTurnoActual ); $var1 ++) {
@@ -160,7 +160,8 @@ public function actionLogin() {
 	
 	// -------------actionPedirTurno()---------------------------------------
 	public function actionPedirTurno() {
-		$dato = $_POST ['nombreDep'];
+		$nomDep = $_POST ['nombreDep'];
+		$nomEmp = $_POST ['nombreEmp'];
 		
 		$connection = Yii::app ()->db;
 		
@@ -170,7 +171,7 @@ public function actionLogin() {
 		$codigo = substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 );
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato . "') and NombreDependencia = '" . $dato . "'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $nomDep . "') and NombreDependencia = '" . $nomDep . "' and Empresa = '". $nomEmp . "'" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
@@ -181,7 +182,7 @@ public function actionLogin() {
 		
 		$logobj = new TestTurnosPedidos ();
 		$logobj->Cod = $codigo;
-		$logobj->NombreDependencia = $dato;
+		$logobj->NombreDependencia = $nomDep;
 		$logobj->Turno = $turnoNuevo;
 		$logobj->insert ();
 		
