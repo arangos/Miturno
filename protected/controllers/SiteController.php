@@ -1,5 +1,4 @@
 <?php
-
 require 'vendor/autoload.php';
 
 use Parse\ParseClient;
@@ -13,7 +12,6 @@ use Parse\ParseException;
 use Parse\ParseAnalytics;
 use Parse\ParseFile;
 use Parse\ParseCloud;
-
 class SiteController extends Controller {
 	/**
 	 * Declares class-based actions.
@@ -80,7 +78,7 @@ class SiteController extends Controller {
 	/**
 	 * Displays the login page
 	 */
-	public function actionLogin() {
+public function actionLogin() {
 		$model = new LoginForm ();
 		
 		// if it is ajax validation request
@@ -94,13 +92,15 @@ class SiteController extends Controller {
 			$model->attributes = $_POST ['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if ($model->validate () && $model->login ())
-				$this->redirect ( Yii::app ()->user->returnUrl );
+				
+				if(Yii::app()->user->Tipo == 'admin'){
+				$this->redirect(Yii::app()->user->returnUrl);
+				//$this->redirect(Yii::app()->user->returnUrl=array('/AdminView'));
+		}else if(Yii::app()->user->Tipo == 'empleado')
+				$this->redirect(Yii::app()->user->returnUrl=array('atender'));
+		
 		}
-		// display the login form
-		$this->render ( 'login', array (
-				'model' => $model 
-		) );
-	}
+}
 	
 	/**
 	 * Logs out the current user and redirect to homepage.
@@ -110,107 +110,105 @@ class SiteController extends Controller {
 		$this->redirect ( Yii::app ()->homeUrl );
 	}
 	
-
-	public function actionListEmp(){
+	// -------------actionListEmp()---------------------------------------
+	public function actionListEmp() {
 		$connection = Yii::app ()->db;
-		$json = array();
-	
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreEmpresa FROM empresa");
-		$sqlTurnoActual = $sqlTurnoActual->getData ();
-	
-		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
-			$emp = $sqlTurnoActual[$var1]['NombreEmpresa'];
+		$json = array ();
 		
-			$json['listDep'][] = array("Empresa"=>$emp);
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreEmpresa FROM empresa" );
+		$sqlTurnoActual = $sqlTurnoActual->getData ();
+		
+		for($var1 = 0; $var1 < count ( $sqlTurnoActual ); $var1 ++) {
+			$emp = $sqlTurnoActual [$var1] ['NombreEmpresa'];
+			
+			$json ['listDep'] [] = array (
+					"Empresa" => $emp 
+			);
 		}
-		echo json_encode($json);
+		echo json_encode ( $json );
 	}
 	
-	
-	
-	public function actionListDep(){
-		$connection = Yii::app ()->db;
-		$json = array();
-				
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia");
-		$sqlTurnoActual = $sqlTurnoActual->getData ();
-	
-		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
-			$dep = $sqlTurnoActual[$var1]['NombreDependencia'];
-			
-			$sqlTurnoEspera = new CSqlDataProvider ( "select count(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia ='".$dep."'" );
-			$sqlTurnoEspera = $sqlTurnoEspera->getData();
-			$tur=$sqlTurnoEspera[0]['count(NombreDependencia)'];
+	// -------------actionListDep()---------------------------------------
+	public function actionListDep() {
 		
-			$json['listDep'][] = array("Dependencia"=>$dep,"Turnos"=>$tur);	
+		$emp = $_POST ['nombreEmp'];
+		
+		$connection = Yii::app ()->db;
+		$json = array ();
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia where NombreEmpresa = '" +$emp+"'2");
+		$sqlTurnoActual = $sqlTurnoActual->getData ();
+		
+		for($var1 = 0; $var1 < count ( $sqlTurnoActual ); $var1 ++) {
+			$dep = $sqlTurnoActual [$var1] ['NombreDependencia'];
+			
+			$sqlTurnoEspera = new CSqlDataProvider ( "select count(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia ='" . $dep . "'" );
+			$sqlTurnoEspera = $sqlTurnoEspera->getData ();
+			$tur = $sqlTurnoEspera [0] ['count(NombreDependencia)'];
+			
+			$json ['listDep'] [] = array (
+					"Dependencia" => $dep,
+					"Turnos" => $tur 
+			);
 		}
 		
-		echo json_encode($json);
-		
+		echo json_encode ( $json );
 	}
-	public function actionPedirTurno(){
+	
+	// -------------actionPedirTurno()---------------------------------------
+	public function actionPedirTurno() {
+		$dato = $_POST ['nombreDep'];
 		
-		$dato = $_POST['nombreDep'];
-			
 		$connection = Yii::app ()->db;
 		
 		$an = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		$su = strlen($an) - 1;
+		$su = strlen ( $an ) - 1;
 		
-		$codigo = substr($an, rand(0, $su), 1) .
-		substr($an, rand(0, $su), 1) .
-		substr($an, rand(0, $su), 1) .
-		substr($an, rand(0, $su), 1) .
-		substr($an, rand(0, $su), 1);
+		$codigo = substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 );
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato ."') and NombreDependencia = '". $dato ."'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $dato . "') and NombreDependencia = '" . $dato . "'" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
-			$turnoNuevo = $sqlUltimoTurno[0] ['Turno']+1;
-		}else{
+			$turnoNuevo = $sqlUltimoTurno [0] ['Turno'] + 1;
+		} else {
 			$turnoNuevo = 1;
 		}
 		
-		
-		$logobj = new TestTurnosPedidos();
+		$logobj = new TestTurnosPedidos ();
 		$logobj->Cod = $codigo;
 		$logobj->NombreDependencia = $dato;
 		$logobj->Turno = $turnoNuevo;
-		$logobj->insert();
+		$logobj->insert ();
 		
-		echo $codigo."-".$turnoNuevo;
-		
-		
+		echo $codigo . "-" . $turnoNuevo;
 	}
-//-------------actionCallAtender()---------------------------------------	
+	// -------------actionCallAtender()---------------------------------------
 	public function actionCallAtender() {
-		
 		$connection = Yii::app ()->db;
-				
+		
 		$codigo = "";
 		
-		if(isset($_POST['selectVar'])){
-			$var = $_POST['selectVar'];
-		}else{
-			$var = $GLOBALS['testvar'];
+		if (isset ( $_POST ['selectVar'] )) {
+			$var = $_POST ['selectVar'];
+		} else {
+			$var = $GLOBALS ['testvar'];
 		}
-//----------Busca En La BD El Turno Que Se Va A Atender En Este Momento----------	
+		// ----------Busca En La BD El Turno Que Se Va A Atender En Este Momento----------
 		
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos 
-						WHERE Turno = (select min(Turno) from test_turnos_pedidos where NombreDependencia = '".$var."') 
-						and NombreDependencia = '".$var."'" );
+						WHERE Turno = (select min(Turno) from test_turnos_pedidos where NombreDependencia = '" . $var . "') 
+						and NombreDependencia = '" . $var . "'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 		
-//----------Busca En La BD El Turno Que Se Va A Atender Despues Del Actual----------	
+		// ----------Busca En La BD El Turno Que Se Va A Atender Despues Del Actual----------
 		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t, 
 						(SELECT Turno t FROM test_turnos_pedidos x 
-						WHERE NombreDependencia = '".$var."' ORDER BY (x.Turno) ASC LIMIT 1)p 
-						WHERE NombreDependencia = '".$var."' AND Turno = p.t +3");
-		 $sqlTurnoProximo = $sqlTurnoProximo->getData ();
-		 
-//----------Valida Que Hallan Mas Turnos Adelante----------
+						WHERE NombreDependencia = '" . $var . "' ORDER BY (x.Turno) ASC LIMIT 1)p 
+						WHERE NombreDependencia = '" . $var . "' AND Turno = p.t +3" );
+		$sqlTurnoProximo = $sqlTurnoProximo->getData ();
+		
+		// ----------Valida Que Hallan Mas Turnos Adelante----------
 		if ($sqlTurnoProximo != null) {
 			$sqlTurnoProximo = $sqlTurnoProximo [0];
 			$turnoProximo = $sqlTurnoProximo ['Turno'];
@@ -218,9 +216,9 @@ class SiteController extends Controller {
 		} else {
 			$turnoProximo = "";
 			$codigoProximo = null;
-		}	
-				
-//----------Muestra Al Funcionario El Turno - Codigo Y Turnos En Espera----------
+		}
+		
+		// ----------Muestra Al Funcionario El Turno - Codigo Y Turnos En Espera----------
 		if ($sqlTurnoActual != null) {
 			$sqlTurnoActual = $sqlTurnoActual [0];
 			$turnoActual = $sqlTurnoActual ['Turno'];
@@ -233,7 +231,7 @@ class SiteController extends Controller {
 			$turnoActual = "";
 		}
 		
-		$sqlTurnosEspera = new CSqlDataProvider ( "SELECT COUNT(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia = '".$var."';" );
+		$sqlTurnosEspera = new CSqlDataProvider ( "SELECT COUNT(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia = '" . $var . "';" );
 		$sqlTurnosEspera = $sqlTurnosEspera->getData ();
 		
 		if ($sqlTurnosEspera != null) {
@@ -242,61 +240,58 @@ class SiteController extends Controller {
 		} else {
 			$turnosEspera = "";
 		}
-//----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------		
+		// ----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
 		
-		ParseClient::initialize('30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo',
-		'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1',
-		'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1');
+		ParseClient::initialize ( '30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo', 'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1', 'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1' );
 		
-		$dataProximo = array("alert" => "Estas proximo a ser atendido");
+		$dataProximo = array (
+				"alert" => "Estas proximo a ser atendido" 
+		);
 		
-		$queryProximo = ParseInstallation::query();
+		$queryProximo = ParseInstallation::query ();
 		
-		$queryProximo->equalTo("device_id", $codigoProximo);
-			
-		ParsePush::send(array(
+		$queryProximo->equalTo ( "device_id", $codigoProximo );
+		
+		ParsePush::send ( array (
 				"where" => $queryProximo,
-				"data" => $dataProximo
-		));
-
+				"data" => $dataProximo 
+		) );
 		
-//----------Manda Push Al Que Se Voy A Atender En Este Momento----------		
-		$dataActual = array("alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender");
+		// ----------Manda Push Al Que Se Voy A Atender En Este Momento----------
+		$dataActual = array (
+				"alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender" 
+		);
 		
-		$queryActual = ParseInstallation::query();
+		$queryActual = ParseInstallation::query ();
 		
-		$queryActual->equalTo("device_id", $codigo);
+		$queryActual->equalTo ( "device_id", $codigo );
 		
-		ParsePush::send(array(
+		ParsePush::send ( array (
 				"where" => $queryActual,
-				"data" => $dataActual
-		));
-				
-//------------------------------------------------------------		
+				"data" => $dataActual 
+		) );
+		
+		// ------------------------------------------------------------
 		
 		$this->render ( 'callAtender', array (
 				'turnoActual' => $turnoActual,
 				'codigo' => $codigo,
 				'turnosEspera' => $turnosEspera 
 		) );
-		
 	}
-
 	
-//------------actionAtender()----------------------------
+	// ------------actionAtender()----------------------------
 	public function actionAtender() {
 		$codigo = "";
 		$turnoActual = "";
 		$turnosEspera = "";
-	
+		
 		$this->render ( 'atender', array (
 				'turnoActual' => $turnoActual,
 				'codigo' => $codigo,
 				'turnosEspera' => $turnosEspera 
 		) );
 	}
-	
-		
 	public function actionEliminarTurno(){
 
 		$codigo = $_POST ['codigo'];
