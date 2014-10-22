@@ -110,12 +110,28 @@ class SiteController extends Controller {
 		$this->redirect ( Yii::app ()->homeUrl );
 	}
 	
+
+	public function actionListEmp(){
+		$connection = Yii::app ()->db;
+		$json = array();
+	
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreEmpresa FROM empresa");
+		$sqlTurnoActual = $sqlTurnoActual->getData ();
+	
+		for($var1 = 0; $var1< count($sqlTurnoActual);$var1++){
+			$emp = $sqlTurnoActual[$var1]['NombreEmpresa'];
+		
+			$json['listDep'][] = array("Empresa"=>$emp);
+		}
+		echo json_encode($json);
+	}
+	
+	
+	
 	public function actionListDep(){
 		$connection = Yii::app ()->db;
 		$json = array();
-		
-		
-		
+				
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia");
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 	
@@ -125,13 +141,10 @@ class SiteController extends Controller {
 			$sqlTurnoEspera = new CSqlDataProvider ( "select count(NombreDependencia) FROM test_turnos_pedidos where NombreDependencia ='".$dep."'" );
 			$sqlTurnoEspera = $sqlTurnoEspera->getData();
 			$tur=$sqlTurnoEspera[0]['count(NombreDependencia)'];
-			
-			$json['listDep'][] = array("Dependencia"=>$dep,"Turnos"=>$tur);
-			
-			
+		
+			$json['listDep'][] = array("Dependencia"=>$dep,"Turnos"=>$tur);	
 		}
 		
-
 		echo json_encode($json);
 		
 	}
