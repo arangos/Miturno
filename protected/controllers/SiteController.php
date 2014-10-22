@@ -100,7 +100,11 @@ public function actionLogin() {
 				$this->redirect(Yii::app()->user->returnUrl=array('atender'));
 		
 		}
-}
+		// display the login form
+		$this->render ( 'login', array (
+				'model' => $model 
+		) );
+	}
 	
 	/**
 	 * Logs out the current user and redirect to homepage.
@@ -131,7 +135,7 @@ public function actionLogin() {
 	// -------------actionListDep()---------------------------------------
 	public function actionListDep() {
 		
-		$emp = $_POST ['nombreEmp'];
+		$emp = $_POST ['nombreEp'];
 		
 		$connection = Yii::app ()->db;
 		$json = array ();
