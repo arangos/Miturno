@@ -282,4 +282,16 @@ class SiteController extends Controller {
 				'turnosEspera' => $turnosEspera 
 		) );
 	}
+	
+		
+	public function actionEliminarTurno(){
+
+		$codigo = $_POST ['codigo'];
+		
+		$connection->createCommand ()->delete ( 'test_turnos_pedidos', 'Cod=:Cod', array (
+				':Cod' => $codigo
+				) );
+		
+		echo "cancelo";
+	}
 }
