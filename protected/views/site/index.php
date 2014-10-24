@@ -12,7 +12,7 @@ $cliente = Clientes::model ()->findAll ();
 		realizar, nuestra idea es que controles mejor tu tiempo.</h1>
 		
 <!-- 		<form action="listDep" method="post"> -->
-		 <button type="submit" id="boton" style="height:60px"  >Pedir Turno</button>
+<!-- 		 <button type="submit" id="boton" style="height:60px"  >Pedir Turno</button> -->
 
 <!-- 		 </form> -->
 		
