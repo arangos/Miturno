@@ -153,8 +153,7 @@ public function actionLogin() {
 					"Dependencia" => $dep,
 					"Turnos" => $tur 
 			);
-		}
-		
+		}		
 		echo json_encode ( $json );
 	}
 	
@@ -251,7 +250,7 @@ public function actionLogin() {
 		ParseClient::initialize ( '30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo', 'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1', 'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1' );
 		
 		$dataProximo = array (
-				"alert" => "Estas proximo a ser atendido" 
+				"alert" => "Estas proximo a ser atendido, acercate al punto de atencion o cancela el turno si no puedes asistir" 
 		);
 		
 		$queryProximo = ParseInstallation::query ();
@@ -265,7 +264,7 @@ public function actionLogin() {
 		
 		// ----------Manda Push Al Que Se Voy A Atender En Este Momento----------
 		$dataActual = array (
-				"alert" => "Es Tu Turno, Muestra El Codigo A La Persona Que Te Va A Atender" 
+				"alert" => "Es tu turno, muestra el siguiente codigo en la taquilla" 
 		);
 		
 		$queryActual = ParseInstallation::query ();
