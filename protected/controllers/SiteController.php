@@ -171,7 +171,7 @@ public function actionLogin() {
 		$codigo = substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 ) . substr ( $an, rand ( 0, $su ), 1 );
 		
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
-    select max(Turno) from test_turnos_pedidos where NombreDependencia = '" . $nomDep . "') and NombreDependencia = '" . $nomDep . "' and Empresa = '". $nomEmp . "'" );
+    select max(Turno) from test_turnos_pedidos where NombreDependencia = '". $nomDep . "') and NombreDependencia = '". $nomDep . "' and nombreEmpresa = '". $nomEmp . "'" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
 		
 		if ($sqlUltimoTurno != null) {
@@ -184,6 +184,7 @@ public function actionLogin() {
 		$logobj->Cod = $codigo;
 		$logobj->NombreDependencia = $nomDep;
 		$logobj->Turno = $turnoNuevo;
+		$logobj->NombreEmpresa = $nomEmp;
 		$logobj->insert ();
 		
 		echo $codigo . "-" . $turnoNuevo;
