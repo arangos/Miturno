@@ -7,9 +7,10 @@ $this->pageTitle = Yii::app ()->name;
 $cliente = Clientes::model ()->findAll ();
 // print_r($cliente);
 
-$dependencias = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia");
+$dependencias = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia LIMIT 50;");
 $dependencias = $dependencias->getData ();
 
+// print_r($dependencias);
 ?>
 
 
@@ -19,7 +20,7 @@ $dependencias = $dependencias->getData ();
 		
 			<?php
 			for($var1 = 0; $var1< count($dependencias);$var1++){
-				echo 	" <option value='".$dependencias[$var1]['NombreDependencia']."'>".$dependencias[$var1]['NombreDependencia']."</option>";
+				echo " <option value='".$dependencias[$var1]['NombreDependencia']."'>".$dependencias[$var1]['NombreDependencia']."</option>";
 			}
 			?>
 			
