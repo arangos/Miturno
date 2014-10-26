@@ -172,7 +172,14 @@ class SiteController extends Controller {
 		$sqlUltimoTurno = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
 				select max(Turno) from test_turnos_pedidos where NombreDependencia = '". $nomDep . "') and NombreDependencia = '". $nomDep . "' and nombreEmpresa = '". $nomEmp . "'" );
 		$sqlUltimoTurno = $sqlUltimoTurno->getData ();
+		
 
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos WHERE Turno = (
+				select min(Turno) from test_turnos_pedidos where NombreDependencia = '". $nomDep . "') and NombreDependencia = '". $nomDep . "' and nombreEmpresa = '". $nomEmp . "'" );
+		$sqlTurnoActual = $sqlTurnoActual->getData ();
+
+		$turnoActual = $sqlTurnoActual [0] ['Turno'];
+		
 		if ($sqlUltimoTurno != null) {
 			$turnoNuevo = $sqlUltimoTurno [0] ['Turno'] + 1;
 		} else {
@@ -186,7 +193,7 @@ class SiteController extends Controller {
 		$logobj->NombreEmpresa = $nomEmp;
 		$logobj->insert ();
 
-		echo $codigo . "-" . $turnoNuevo;
+		echo $codigo . "-" . $turnoNuevo . "-" . $turnoActual;
 	}
 	// -------------actionCallAtender()---------------------------------------
 	public function actionCallAtender() {
