@@ -9,6 +9,7 @@
  * @property string $User
  * @property string $Pass
  * @property integer $IdCliente
+ * @property string $Tipo
  *
  * The followings are the available model relations:
  * @property Empresa[] $empresas
@@ -31,12 +32,12 @@ class Clientes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, Apellido, User, Pass', 'required'),
-			array('Nombre, User, Pass', 'length', 'max'=>20),
+			array('Nombre, Apellido, User, Pass', 'Tipo', 'required'),
+			array('Nombre, User, Pass , Tipo', 'length', 'max'=>20),
 			array('Apellido', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Nombre, Apellido, User, Pass, IdCliente', 'safe', 'on'=>'search'),
+			array('Nombre, Apellido, User, Pass, IdCliente, Tipo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,6 +64,7 @@ class Clientes extends CActiveRecord
 			'User' => 'User',
 			'Pass' => 'Pass',
 			'IdCliente' => 'Id Cliente',
+			'Tipo' => 'Tipo',
 		);
 	}
 
@@ -89,6 +91,7 @@ class Clientes extends CActiveRecord
 		$criteria->compare('User',$this->User,true);
 		$criteria->compare('Pass',$this->Pass,true);
 		$criteria->compare('IdCliente',$this->IdCliente);
+		$criteria->compare('Tipo',$this->Tipo);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
