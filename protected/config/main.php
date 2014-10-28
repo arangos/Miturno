@@ -53,10 +53,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=miturno',
+			'connectionString' => 'mysql:host=localhost;dbname=miturno1',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'admin',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		
@@ -86,5 +86,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'svascot@gmail.com',
+		
 	),
 );
