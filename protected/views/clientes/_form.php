@@ -20,18 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Nombre'); ?>
-		<?php echo $form->textField($model,'Nombre',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'Nombre'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'Apellido'); ?>
-		<?php echo $form->textField($model,'Apellido',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'Apellido'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'User'); ?>
 		<?php echo $form->textField($model,'User',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'User'); ?>
@@ -41,6 +29,18 @@
 		<?php echo $form->labelEx($model,'Pass'); ?>
 		<?php echo $form->passwordField($model,'Pass',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'Pass'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Tipo'); ?>
+		<?php echo $form->textField($model,'Tipo',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo $form->error($model,'Tipo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'IdEmpresa'); ?>
+		<?php echo $form->textField($model,'IdEmpresa'); ?>
+		<?php echo $form->error($model,'IdEmpresa'); ?>
 	</div>
 
 	<div class="row buttons">

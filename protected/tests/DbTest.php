@@ -3,7 +3,7 @@ Class DbTest extends CTestCase
 {
 	public function testConnection()
 	{
-$servername = "localhost";
+	$servername = "localhost";
 	$username = "root";
 	$password = "";
 	

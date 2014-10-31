@@ -1,14 +1,46 @@
 <?php
 /* @var $this SiteController */
 
+$model = new LoginForm();
+$attribute = Yii::app()->user->IdEmpresa;
+
+//print_r ($attribute);
 
 $this->pageTitle = Yii::app ()->name;
 
 $cliente = Clientes::model ()->findAll ();
-// print_r($cliente);
+//print_r($cliente);
 
-$dependencias = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia LIMIT 50;");
+
+$dependencias = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia WHERE IdEmpresa = $attribute LIMIT 50;");
+//print_r( $dependencias);
 $dependencias = $dependencias->getData ();
+
+//no borrar trae el login del post
+if (isset ( $_POST ['LoginForm'] )) {
+	$model->attributes = $_POST ['LoginForm'];
+	$us = Yii::app()->user->User;
+	
+	$user = Clientes::model()->find(array('condition'=>"User='$us'"));
+//	print_r($user);
+}
+
+
+
+
+
+
+//$clientId = Yii::app()->Clientes->IdCliente;
+
+//$empresaId = Yii::app()->empresa->IdEmpresa;
+
+// if(Yii::app()->user->Tipo == 'admin'){
+// 				$this->redirect(Yii::app()->user->returnUrl);
+// 				//$this->redirect(Yii::app()->user->returnUrl=array('/AdminView'));
+// 			}else if(Yii::app()->user->Tipo == 'empleado')
+// 				$this->redirect(Yii::app()->user->returnUrl=array('atender'));
+
+// 		}
 
 // print_r($dependencias);
 ?>

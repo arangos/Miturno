@@ -12,16 +12,6 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'Nombre'); ?>
-		<?php echo $form->textField($model,'Nombre',array('size'=>20,'maxlength'=>20)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'Apellido'); ?>
-		<?php echo $form->textField($model,'Apellido',array('size'=>30,'maxlength'=>30)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'User'); ?>
 		<?php echo $form->textField($model,'User',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
@@ -34,6 +24,16 @@
 	<div class="row">
 		<?php echo $form->label($model,'IdCliente'); ?>
 		<?php echo $form->textField($model,'IdCliente'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'Tipo'); ?>
+		<?php echo $form->textField($model,'Tipo',array('size'=>15,'maxlength'=>15)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'IdEmpresa'); ?>
+		<?php echo $form->textField($model,'IdEmpresa'); ?>
 	</div>
 
 	<div class="row buttons">

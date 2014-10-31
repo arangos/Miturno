@@ -37,6 +37,7 @@ public function authenticate()
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 		}
 		Yii::app()->user->setState('Tipo',$user->Tipo);
+		Yii::app()->user->setState('IdEmpresa',$user->IdEmpresa);
 // 		echo ("este es el tipo del usuario" + $user->Tipo);
 		return !$this->errorCode;
 		}
