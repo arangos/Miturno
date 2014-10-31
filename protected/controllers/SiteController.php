@@ -114,7 +114,7 @@ class SiteController extends Controller {
 		$this->redirect ( Yii::app ()->homeUrl );
 	}
 
-	// -------------actionListEmp()---------------------------------------
+// -------------actionListEmp()---------------------------------------
 	public function actionListEmp() {
 		$connection = Yii::app ()->db;
 		$json = array ();
@@ -132,7 +132,7 @@ class SiteController extends Controller {
 		echo json_encode ( $json );
 	}
 
-	// -------------actionListDep()---------------------------------------
+// -------------actionListDep()---------------------------------------
 	public function actionListDep() {
 
 		$emp = $_POST ['nombreEp'];
@@ -157,7 +157,7 @@ class SiteController extends Controller {
 		echo json_encode ( $json );
 	}
 
-	// -------------actionPedirTurno()---------------------------------------
+// -------------actionPedirTurno()---------------------------------------
 	public function actionPedirTurno() {
 		$nomDep = $_POST ['nombreDep'];
 		$nomEmp = $_POST ['nombreEmp'];
@@ -195,7 +195,7 @@ class SiteController extends Controller {
 
 		echo $codigo . "-" . $turnoNuevo . "-" . $turnoActual;
 	}
-	// -------------actionCallAtender()---------------------------------------
+// -------------actionCallAtender()---------------------------------------
 	public function actionCallAtender() {
 		$connection = Yii::app ()->db;
 
@@ -207,20 +207,20 @@ class SiteController extends Controller {
 			$var = $GLOBALS ['testvar'];
 		}
 		
-		// ----------Busca En La BD El Turno Que Se Va A Atender En Este Momento----------
+// ----------Busca En La BD El Turno Que Se Va A Atender En Este Momento----------
 		$sqlTurnoActual = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos
 				WHERE Turno = (select min(Turno) from test_turnos_pedidos where NombreDependencia = '" . $var . "')
 				and NombreDependencia = '" . $var . "'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 
-		// ----------Busca En La BD El Turno Que Se Va A Atender Despues Del Actual----------
+// ----------Busca En La BD El Turno Que Se Va A Atender Despues Del Actual----------
 		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t,
 				(SELECT Turno t FROM test_turnos_pedidos x
 				WHERE NombreDependencia = '" . $var . "' ORDER BY (x.Turno) ASC LIMIT 1)p
 				WHERE NombreDependencia = '" . $var . "' AND Turno = p.t +3" );
 		$sqlTurnoProximo = $sqlTurnoProximo->getData ();
 
-		// ----------Valida Que Hallan Mas Turnos Adelante----------
+// ----------Valida Que Hallan Mas Turnos Adelante----------
 		if ($sqlTurnoProximo != null) {
 			$sqlTurnoProximo = $sqlTurnoProximo [0];
 			$turnoProximo = $sqlTurnoProximo ['Turno'];
@@ -230,7 +230,7 @@ class SiteController extends Controller {
 			$codigoProximo = null;
 		}
 
-		// ----------Muestra Al Funcionario El Turno - Codigo Y Turnos En Espera----------
+// ----------Muestra Al Funcionario El Turno - Codigo Y Turnos En Espera----------
 		if ($sqlTurnoActual != null) {
 			$sqlTurnoActual = $sqlTurnoActual [0];
 			$turnoActual = $sqlTurnoActual ['Turno'];
@@ -252,24 +252,28 @@ class SiteController extends Controller {
 		} else {
 			$turnosEspera = "";
 		}
-		// ----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
+// ----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
 
 		ParseClient::initialize ( '30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo', 'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1', 'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1' );
 
 		$dataProximo = array (
 				"alert" => "Estas proximo a ser atendido, acercate al punto de atencion o cancela el turno si no puedes asistir"
 		);
-
+		
 		$queryProximo = ParseInstallation::query ();
-
-		$queryProximo->equalTo ( "device_id", $codigoProximo );
-
+		
+// 		$queryProximo->decrement("turnos_espera");
+//		$queryProximo->equalTo ( "turnos_espera", 14 );
+		
+ 		$queryProximo->equalTo ( "device_id", $codigoProximo );
+		
 		ParsePush::send ( array (
 				"where" => $queryProximo,
-				"data" => $dataProximo
+				"data" => $dataProximo,
+				"turnos_espera" => "increment"
 		) );
 
-		// ----------Manda Push Al Que Se Voy A Atender En Este Momento----------
+// ----------Manda Push Al Que Se Voy A Atender En Este Momento----------
 		$dataActual = array (
 				"alert" => "Es tu turno, muestra el siguiente codigo en la taquilla"
 		);
@@ -283,7 +287,7 @@ class SiteController extends Controller {
 				"data" => $dataActual
 		) );
 
-		// ------------------------------------------------------------
+// ------------------------------------------------------------
 
 		$this->render ( 'callAtender', array (
 				'turnoActual' => $turnoActual,
@@ -292,7 +296,7 @@ class SiteController extends Controller {
 		) );
 	}
 
-	// ------------actionAtender()----------------------------
+// ------------actionAtender()----------------------------
 	public function actionAtender() {
 		$codigo = "";
 		$turnoActual = "";
@@ -305,7 +309,7 @@ class SiteController extends Controller {
 		) );
 	}
 
-	// ------------actionEliminarTurno()----------------------------
+// ------------actionEliminarTurno()----------------------------
 	public function actionEliminarTurno(){
 
 		$codigo = $_POST ['codigo'];
