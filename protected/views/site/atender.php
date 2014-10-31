@@ -20,42 +20,23 @@ $dependencias = $dependencias->getData ();
 if (isset ( $_POST ['LoginForm'] )) {
 	$model->attributes = $_POST ['LoginForm'];
 	$us = Yii::app()->user->User;
-	
+
 	$user = Clientes::model()->find(array('condition'=>"User='$us'"));
-//	print_r($user);
+	//	print_r($user);
 }
 
-
-
-
-
-
-//$clientId = Yii::app()->Clientes->IdCliente;
-
-//$empresaId = Yii::app()->empresa->IdEmpresa;
-
-// if(Yii::app()->user->Tipo == 'admin'){
-// 				$this->redirect(Yii::app()->user->returnUrl);
-// 				//$this->redirect(Yii::app()->user->returnUrl=array('/AdminView'));
-// 			}else if(Yii::app()->user->Tipo == 'empleado')
-// 				$this->redirect(Yii::app()->user->returnUrl=array('atender'));
-
-// 		}
-
-// print_r($dependencias);
 ?>
-
 
 <form action="callAtender" method="post">
 	<div>
 		Elije la dependencia que atenderas: <select name="selectVar">
-		
+
 			<?php
 			for($var1 = 0; $var1< count($dependencias);$var1++){
 				echo " <option value='".$dependencias[$var1]['NombreDependencia']."'>".$dependencias[$var1]['NombreDependencia']."</option>";
 			}
 			?>
-			
+
 		</select>
 	</div>
 	<br>
