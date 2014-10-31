@@ -4,12 +4,11 @@
  * This is the model class for table "clientes".
  *
  * The followings are the available columns in table 'clientes':
- * @property string $Nombre
- * @property string $Apellido
  * @property string $User
  * @property string $Pass
  * @property integer $IdCliente
  * @property string $Tipo
+ * @property integer $IdEmpresa
  *
  * The followings are the available model relations:
  * @property Empresa[] $empresas
@@ -32,12 +31,13 @@ class Clientes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, Apellido, User, Pass', 'Tipo', 'required'),
-			array('Nombre, User, Pass , Tipo', 'length', 'max'=>20),
-			array('Apellido', 'length', 'max'=>30),
+			array('User, Pass, Tipo, IdEmpresa', 'required'),
+			array('IdEmpresa', 'numerical', 'integerOnly'=>true),
+			array('User, Pass', 'length', 'max'=>20),
+			array('Tipo', 'length', 'max'=>15),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Nombre, Apellido, User, Pass, IdCliente, Tipo', 'safe', 'on'=>'search'),
+			array('User, Pass, IdCliente, Tipo, IdEmpresa', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,12 +59,11 @@ class Clientes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'Nombre' => 'Nombre',
-			'Apellido' => 'Apellido',
 			'User' => 'User',
 			'Pass' => 'Pass',
 			'IdCliente' => 'Id Cliente',
 			'Tipo' => 'Tipo',
+			'IdEmpresa' => 'Id Empresa',
 		);
 	}
 
@@ -86,12 +85,11 @@ class Clientes extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('Apellido',$this->Apellido,true);
 		$criteria->compare('User',$this->User,true);
 		$criteria->compare('Pass',$this->Pass,true);
 		$criteria->compare('IdCliente',$this->IdCliente);
-		$criteria->compare('Tipo',$this->Tipo);
+		$criteria->compare('Tipo',$this->Tipo,true);
+		$criteria->compare('IdEmpresa',$this->IdEmpresa);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

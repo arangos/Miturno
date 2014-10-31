@@ -70,8 +70,6 @@ class ClientesController extends Controller
 		if(isset($_POST['Clientes']))
 		{
 			$model->attributes=$_POST['Clientes'];
-			
-
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->IdCliente));
 		}
@@ -124,13 +122,9 @@ class ClientesController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$Clientes = Clientes::model()->findAll();
-		
 		$dataProvider=new CActiveDataProvider('Clientes');
-
 		$this->render('index',array(
- 			'dataProvider'=>$dataProvider,
-// 			'test'=>$Clientes,
+			'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -176,15 +170,4 @@ class ClientesController extends Controller
 			Yii::app()->end();
 		}
 	}
-
-	public function validatePassword($password)
- 	{
- 		return $this->hashPassword($password)===$this->password;
- 	}
- 	
- 	public function hashPassword($password)
- 	{
- 		return md5($password);
- 	}
-
 }
