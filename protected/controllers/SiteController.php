@@ -119,14 +119,16 @@ class SiteController extends Controller {
 		$connection = Yii::app ()->db;
 		$json = array ();
 
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreEmpresa FROM empresa" );
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreEmpresa, IdEmpresa FROM empresa" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 
 		for($var1 = 0; $var1 < count ( $sqlTurnoActual ); $var1 ++) {
 			$emp = $sqlTurnoActual [$var1] ['NombreEmpresa'];
+			$id = $sqlTurnoActual [$var1] ['IdEmpresa'];
 				
 			$json ['listDep'] [] = array (
-					"Empresa" => $emp
+					"Empresa" => $emp,
+					"id" => $id
 			);
 		}
 		echo json_encode ( $json );
@@ -139,7 +141,7 @@ class SiteController extends Controller {
 
 		$connection = Yii::app ()->db;
 		$json = array ();
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia where NombreEmpresa = '" .$emp."'");
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT NombreDependencia FROM dependencia where IdEmpresa = '" .$emp."'");
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
 
 		for($var1 = 0; $var1 < count ( $sqlTurnoActual ); $var1 ++) {
