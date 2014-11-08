@@ -27,8 +27,8 @@ class TblEstadisticas extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('IdEstadistica, IdDependencia, Fecha, Hora', 'required'),
-			array('IdEstadistica, IdDependencia', 'numerical', 'integerOnly'=>true),
+			array('IdDependencia, Fecha, Hora', 'required'),
+			array('IdDependencia', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('IdEstadistica, IdDependencia, Fecha, Hora', 'safe', 'on'=>'search'),

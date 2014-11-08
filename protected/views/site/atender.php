@@ -14,7 +14,7 @@ $fechayhora = $fechayhora->getData();
 $string = $fechayhora[0]['SYSDATE()'];
 //echo $string;
 
-$string1 = split(' ', $string);
+$string1 = explode(' ', $string);
 echo ("fecha ->  " . $string1[0]);
 echo ('<br>');
 echo ("Hora -> " . $string1[1]);
