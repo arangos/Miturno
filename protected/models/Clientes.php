@@ -33,7 +33,7 @@ class Clientes extends CActiveRecord
 		return array(
 			array('User, Pass, Tipo, IdEmpresa', 'required'),
 			array('IdEmpresa', 'numerical', 'integerOnly'=>true),
-			array('User, Pass', 'length', 'max'=>20),
+			array('User, Pass', 'length', 'max'=>40),
 			array('Tipo', 'length', 'max'=>15),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

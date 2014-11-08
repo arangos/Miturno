@@ -81,11 +81,6 @@ class SiteController extends Controller {
 	public function actionLogin() {
 		$model = new LoginForm ();
 
-		// if it is ajax validation request
-		if (isset ( $_POST ['ajax'] ) && $_POST ['ajax'] === 'login-form') {
-			echo CActiveForm::validate ( $model );
-			Yii::app ()->end ();
-		}
 
 		// collect user input data
 		if (isset ( $_POST ['LoginForm'] )) {
@@ -94,8 +89,9 @@ class SiteController extends Controller {
 			if ($model->validate () && $model->login ())
 
 				if(Yii::app()->user->Tipo == 'admin'){
-				$this->redirect(Yii::app()->user->returnUrl);
-				//$this->redirect(Yii::app()->user->returnUrl=array('/AdminView'));
+				//$this->render('admin');
+				//$this->renderPartial()
+				$this->redirect(Yii::app()->user->returnUrl=array('admin'));
 			}else if(Yii::app()->user->Tipo == 'empleado')
 				$this->redirect(Yii::app()->user->returnUrl=array('atender'));
 
@@ -303,6 +299,20 @@ class SiteController extends Controller {
 				'codigo' => $codigo,
 				'turnosEspera' => $turnosEspera
 		) );
+	}
+	
+	//----------actionAdmin()----------------
+	
+	public  function actionAdmin() {
+		
+		$this->layout='';
+		
+		$Usuario = "";
+		$Tipo = "";
+		 $this->renderPartial('admin', array( 
+		 	'Usuario' => $Usuario,
+		 	'Tipo' => $Tipo,
+		 ));
 	}
 
 	// ------------actionEliminarTurno()----------------------------
