@@ -18,6 +18,7 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
+
 <body>
 
 <div class="container" id="page">
@@ -30,11 +31,11 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				//array('label'=>'Atender', 'url'=>array('/site/atender'), 'visible'=>!Yii::app()->user->isGuest),
-				//array('label'=>'Cliente', 'url'=>array('/clientes'), 'visible'=>!Yii::app()->user->isGuest),
-				//array('label'=>'Empresas', 'url'=>array('/empresa'), 'visible'=>!Yii::app()->user->isGuest),
-				//array('label'=>'Dependencias', 'url'=>array('/dependencia'), 'visible'=>!Yii::app()->user->isGuest),
-				//array('label'=>'Admin', 'url'=>array('/site/admin', 'view'=>'admin')),
+				array('label'=>'Atender', 'url'=>array('/site/atender'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Cliente', 'url'=>array('/clientes'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Empresas', 'url'=>array('/empresa'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Dependencias', 'url'=>array('/dependencia'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Admin', 'url'=>array('/site/admin', 'view'=>'admin')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
@@ -48,8 +49,12 @@
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
-	<?php echo $content; ?>
-
+	<br>
+	<div class="center">
+	<br>
+	<H1>Admin Page </H1>
+	</br>
+	</div>
 	<div class="clear"></div>
 
 	<div id="footer">

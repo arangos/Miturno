@@ -26,23 +26,34 @@ class ClientesController extends Controller
 	 */
 	public function accessRules()
 	{
-		return array(
+	return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('get'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','create'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
 		);
+	}
+		
+	
+	public function  userType($Tipo){
+		
+		$tipo = Clientes::model()->Tipo;
+		
+		//$tipoUsuario = Clientes::model()->findAll(array('select'=>'Tipo','condition'=>'Tipo=:Tipo','params'=>array(':Tipo'=>$Tipo)));
+		$tipos = array();
+		
+		return $Type;
 	}
 
 	/**
@@ -70,6 +81,10 @@ class ClientesController extends Controller
 		if(isset($_POST['Clientes']))
 		{
 			$model->attributes=$_POST['Clientes'];
+			
+			$password = $_POST['Clientes']['Pass'];
+			$model->Pass = md5($password);
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->IdCliente));
 		}
