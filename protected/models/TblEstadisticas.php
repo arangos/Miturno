@@ -29,6 +29,7 @@ class TblEstadisticas extends CActiveRecord
 		return array(
 			array('IdDependencia, Fecha, Hora', 'required'),
 			array('IdDependencia', 'numerical', 'integerOnly'=>true),
+			array('Fecha, Hora', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('IdEstadistica, IdDependencia, Fecha, Hora', 'safe', 'on'=>'search'),

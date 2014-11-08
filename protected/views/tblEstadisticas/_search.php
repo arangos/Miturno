@@ -23,12 +23,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'Fecha'); ?>
-		<?php echo $form->textField($model,'Fecha'); ?>
+		<?php echo $form->textField($model,'Fecha',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'Hora'); ?>
-		<?php echo $form->textField($model,'Hora'); ?>
+		<?php echo $form->textField($model,'Hora',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row buttons">

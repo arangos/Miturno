@@ -27,13 +27,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Fecha'); ?>
-		<?php echo $form->textField($model,'Fecha'); ?>
+		<?php echo $form->textField($model,'Fecha',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'Fecha'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Hora'); ?>
-		<?php echo $form->textField($model,'Hora'); ?>
+		<?php echo $form->textField($model,'Hora',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'Hora'); ?>
 	</div>
 
