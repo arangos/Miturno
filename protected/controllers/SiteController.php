@@ -259,16 +259,12 @@ class SiteController extends Controller {
 		);
 		
 		$queryProximo = ParseInstallation::query ();
-		
-// 		$queryProximo->decrement("turnos_espera");
-//		$queryProximo->equalTo ( "turnos_espera", 14 );
-		
+	
  		$queryProximo->equalTo ( "device_id", $codigoProximo );
 		
 		ParsePush::send ( array (
 				"where" => $queryProximo,
 				"data" => $dataProximo,
-				"turnos_espera" => "increment"
 		) );
 
 // ----------Manda Push Al Que Se Voy A Atender En Este Momento----------
