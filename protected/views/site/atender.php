@@ -1,6 +1,13 @@
 <?php
 /* @var $this SiteController */
 
+// $this->widget('zii.widgets.CMenu',array(
+// 		'encodeLabel'=>false,
+// 		'items'=>array(
+				
+// 				array('label'=>'Atender Nueva dependencia', 'url'=>array('site/atender'), 'visible'=>!Yii::app()->user->isGuest),
+// 		)));
+
 $model = new LoginForm();
 $attribute = Yii::app()->user->IdEmpresa;
 
