@@ -28,6 +28,17 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Clientes</h1>
 
+<?php 
+$this->widget('zii.widgets.CMenu',array(
+		'encodeLabel'=>false,
+		'items'=>array(
+		//array('label'=>'Cliente', 'url'=>array('/clientes'), 'visible'=>!Yii::app()->user->isGuest),
+		array('label'=>'Administrar Empresas', 'url'=>array('/empresa'), 'visible'=>!Yii::app()->user->isGuest),
+		array('label'=>'Administrar Dependencias', 'url'=>array('/dependencia'), 'visible'=>!Yii::app()->user->isGuest),
+				)));
+
+?>
+
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
 or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.

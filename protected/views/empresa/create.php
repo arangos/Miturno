@@ -15,4 +15,12 @@ $this->menu=array(
 
 <h1>Create Empresa</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php 
+$this->widget('zii.widgets.CMenu',array(
+		'encodeLabel'=>false,
+		'items'=>array(
+				array('label'=>'Administrar Clientes', 'url'=>array('/clientes'), 'visible'=>!Yii::app()->user->isGuest),
+				//array('label'=>'Administrar Empresas', 'url'=>array('/empresa'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Administrar Dependencias', 'url'=>array('/dependencia'), 'visible'=>!Yii::app()->user->isGuest),
+		)));
+$this->renderPartial('_form', array('model'=>$model)); ?>

@@ -9,6 +9,13 @@
 /* @var $this SiteController */
 $this->pageTitle = Yii::app ()->name;
 
+$this->widget('zii.widgets.CMenu',array(
+		'encodeLabel'=>false,
+		'items'=>array(
+
+				array('label'=>'Atender Nueva dependencia', 'url'=>array('site/atender'), 'visible'=>!Yii::app()->user->isGuest),
+)));
+
 $cliente = Clientes::model ()->findAll ();
 
 $var = $_POST['selectVar'];
