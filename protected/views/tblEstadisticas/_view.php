@@ -17,6 +17,14 @@
 	<?php echo CHtml::encode($data->Fecha); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Mes')); ?>:</b>
+	<?php echo CHtml::encode($data->Mes); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Dia')); ?>:</b>
+	<?php echo CHtml::encode($data->Dia); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Hora')); ?>:</b>
 	<?php echo CHtml::encode($data->Hora); ?>
 	<br />

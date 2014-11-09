@@ -32,6 +32,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'Mes'); ?>
+		<?php echo $form->textField($model,'Mes',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->error($model,'Mes'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Dia'); ?>
+		<?php echo $form->textField($model,'Dia',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->error($model,'Dia'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'Hora'); ?>
 		<?php echo $form->textField($model,'Hora',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'Hora'); ?>

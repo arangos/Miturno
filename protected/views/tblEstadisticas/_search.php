@@ -27,6 +27,16 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'Mes'); ?>
+		<?php echo $form->textField($model,'Mes',array('size'=>20,'maxlength'=>20)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'Dia'); ?>
+		<?php echo $form->textField($model,'Dia',array('size'=>20,'maxlength'=>20)); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'Hora'); ?>
 		<?php echo $form->textField($model,'Hora',array('size'=>60,'maxlength'=>100)); ?>
 	</div>

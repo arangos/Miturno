@@ -7,6 +7,8 @@
  * @property integer $IdEstadistica
  * @property integer $IdDependencia
  * @property string $Fecha
+ * @property string $Mes
+ * @property string $Dia
  * @property string $Hora
  */
 class TblEstadisticas extends CActiveRecord
@@ -27,12 +29,13 @@ class TblEstadisticas extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('IdDependencia, Fecha, Hora', 'required'),
+			array('IdDependencia, Fecha, Mes, Dia, Hora', 'required'),
 			array('IdDependencia', 'numerical', 'integerOnly'=>true),
 			array('Fecha, Hora', 'length', 'max'=>100),
+			array('Mes, Dia', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('IdEstadistica, IdDependencia, Fecha, Hora', 'safe', 'on'=>'search'),
+			array('IdEstadistica, IdDependencia, Fecha, Mes, Dia, Hora', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +59,8 @@ class TblEstadisticas extends CActiveRecord
 			'IdEstadistica' => 'Id Estadistica',
 			'IdDependencia' => 'Id Dependencia',
 			'Fecha' => 'Fecha',
+			'Mes' => 'Mes',
+			'Dia' => 'Dia',
 			'Hora' => 'Hora',
 		);
 	}
@@ -81,6 +86,8 @@ class TblEstadisticas extends CActiveRecord
 		$criteria->compare('IdEstadistica',$this->IdEstadistica);
 		$criteria->compare('IdDependencia',$this->IdDependencia);
 		$criteria->compare('Fecha',$this->Fecha,true);
+		$criteria->compare('Mes',$this->Mes,true);
+		$criteria->compare('Dia',$this->Dia,true);
 		$criteria->compare('Hora',$this->Hora,true);
 
 		return new CActiveDataProvider($this, array(

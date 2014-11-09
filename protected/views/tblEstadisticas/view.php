@@ -24,6 +24,8 @@ $this->menu=array(
 		'IdEstadistica',
 		'IdDependencia',
 		'Fecha',
+		'Mes',
+		'Dia',
 		'Hora',
 	),
 )); ?>
