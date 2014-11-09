@@ -213,7 +213,7 @@ class SiteController extends Controller {
 		$logobj->Dia = date('l', strtotime( $string1[0]));
 		$logobj->Mes = date('M', strtotime( $string1[0]));
 		$logobj->insert ();
-		
+			
 
 		echo $codigo . "-" . $turnoNuevo . "-" . $turnoActual;
 	}
