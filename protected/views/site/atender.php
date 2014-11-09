@@ -12,20 +12,23 @@ $model = new LoginForm();
 $attribute = Yii::app()->user->IdEmpresa;
 
 $coso = Yii::app()->user->Tipo;
-echo ("este es le tipo de usuario -> " . $coso);
-echo ('<br>'); 
+// echo ("este es le tipo de usuario -> " . $coso);
+// echo ('<br>'); 
 
-$fechayhora = new CSqlDataProvider ("SELECT SYSDATE();");
-$fechayhora = $fechayhora->getData();
+// $fechayhora = new CSqlDataProvider ("SELECT SYSDATE();");
+// $fechayhora = $fechayhora->getData();
 
-$string = $fechayhora[0]['SYSDATE()'];
-//echo $string;
+// $string = $fechayhora[0]['SYSDATE()'];
+// //echo $string;
 
-$string1 = explode(' ', $string);
-echo ("fecha ->  " . $string1[0]);
-echo ('<br>');
-echo ("Hora -> " . $string1[1]);
+// $string1 = explode(' ', $string);
 
+// echo ("fecha ->  " . $string1[0]);
+// echo ('<br>');
+// echo ("Hora -> " . $string1[1]);
+// echo ('<br>');
+// echo date('l', strtotime( $string1[0]));
+// echo date('M', strtotime( $string1[0]));
 
 $this->pageTitle = Yii::app ()->name;
 

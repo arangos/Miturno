@@ -191,6 +191,30 @@ class SiteController extends Controller {
 		$logobj->NombreEmpresa = $nomEmp;
 		$logobj->insert ();
 
+//-----------Inserta Estadisticas ---------------------------------------
+		
+		$sqlTurnoActual = new CSqlDataProvider ( "SELECT IdDependencia FROM dependencia where NombreDependencia = '" .$var."'");
+		$sqlTurnoActual = $sqlTurnoActual->getData ();
+		
+		$IdDep = $sqlTurnoActual [0] ['IdDependencia'];
+		
+		
+		$fechayhora = new CSqlDataProvider ("SELECT SYSDATE();");
+		$fechayhora = $fechayhora->getData();
+		$string = $fechayhora[0]['SYSDATE()'];
+		//print_r($string);
+		
+		$string1 = explode(' ', $string);
+
+		$logobj = new TblEstadisticas ();
+		$logobj->IdDependencia = $IdDep;
+		$logobj->Fecha= $string1[0];
+		$logobj->Hora= $string1[1];
+		$logobj->Dia = date('l', strtotime( $string1[0]));
+		$logobj->Mes = date('M', strtotime( $string1[0]));
+		$logobj->insert ();
+		
+
 		echo $codigo . "-" . $turnoNuevo . "-" . $turnoActual;
 	}
 // -------------actionCallAtender()---------------------------------------
@@ -250,32 +274,7 @@ class SiteController extends Controller {
 		} else {
 			$turnosEspera = "";
 		}
-		
-//-----------Inserta Estadisticas ---------------------------------------
-		
-		$sqlTurnoActual = new CSqlDataProvider ( "SELECT IdDependencia FROM dependencia where NombreDependencia = '" .$var."'");
-		$sqlTurnoActual = $sqlTurnoActual->getData ();
-		
-		$IdDep = $sqlTurnoActual [0] ['IdDependencia'];
-		
-		
-		$fechayhora = new CSqlDataProvider ("SELECT SYSDATE();");
-		$fechayhora = $fechayhora->getData();
-		$string = $fechayhora[0]['SYSDATE()'];
-		//print_r($string);
-
-		$string1 = explode(' ', $string);
-		//echo ("fecha ->  " . $string1[0]);
-		//echo ('<br>');
-		//echo ("Hora -> " . $string1[1]);
-		
-		$logobj = new TblEstadisticas ();
-		$logobj->IdDependencia = $IdDep;
-		$logobj->Fecha= $string1[0];
-		$logobj->Hora= $string1[1];
-		$logobj->insert ();
-		
-		
+				
 // ----------Manda Push Al Que Se Va A Atender 3 Turnos Despues----------
 
 		ParseClient::initialize ( '30RmLKXYaKqfDn68xP747xkZJOD2tyiiUvT56qQo', 'qDgjdkVE81EsNPCGTSvk1oAuPPZR3kZMfAvPUgF1', 'Gs62Qmys1afj6J9nI6mfs9opRIv9eYZu62C2Alo1' );
