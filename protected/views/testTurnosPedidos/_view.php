@@ -13,8 +13,16 @@
 	<?php echo CHtml::encode($data->NombreDependencia); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('NumeroAviso')); ?>:</b>
+	<?php echo CHtml::encode($data->NumeroAviso); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Turno')); ?>:</b>
 	<?php echo CHtml::encode($data->Turno); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Empresa')); ?>:</b>
+	<?php echo CHtml::encode($data->Empresa); ?>
 	<br />
 
 

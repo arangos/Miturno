@@ -184,6 +184,7 @@ class SiteController extends Controller {
 
 		$logobj = new TestTurnosPedidos ();
 		$logobj->Cod = $codigo;
+		$logobj->NumeroAviso = 5;
 		$logobj->NombreDependencia = $nomDep;
 		$logobj->Turno = $turnoNuevo;
 		$logobj->NombreEmpresa = $nomEmp;
@@ -232,6 +233,13 @@ class SiteController extends Controller {
 				WHERE Turno = (select min(Turno) from test_turnos_pedidos where NombreDependencia = '" . $var . "')
 				and NombreDependencia = '" . $var . "'" );
 		$sqlTurnoActual = $sqlTurnoActual->getData ();
+		
+// ----------BUSCA el turno actual para callAtender para avisar cuando enviar la notificacion -------------------
+
+		$sqlTurnoActual2 = new CSqlDataProvider("SELECT min( `Turno` ) FROM `test_turnos_pedidos` WHERE `NombreDependencia` = '".$var."'");
+		$sqlTurnoActual2 = $sqlTurnoActual2->getData();
+		echo $sqlTurnoActual2;
+		
 
 // ----------Busca En La BD El Turno Que Se Va A Atender Despues Del Actual----------
 		$sqlTurnoProximo = new CSqlDataProvider ( "SELECT * FROM test_turnos_pedidos t,
@@ -239,6 +247,26 @@ class SiteController extends Controller {
 				WHERE NombreDependencia = '" . $var . "' ORDER BY (x.Turno) ASC LIMIT 1)p
 				WHERE NombreDependencia = '" . $var . "' AND Turno = p.t +3" );
 		$sqlTurnoProximo = $sqlTurnoProximo->getData ();
+		
+		$sqlTurnos = new CSqlDataProvider("Select Turno,NumeroAviso FROM test_turnos_pedidos WHERE NombreDependencia = '".$var."' ORDER BY Turno");
+		$sqlTurnos = $sqlTurnos->getData();
+		
+		for ($i = 0; $i<count($sqlTurnos); $i++){
+			$avisar = (int)$sqlTurnos[$i]['Turno'] - (int)$sqlTurnoActual;
+			echo "SQL Turnos # Aviso ".$sqlTurnos[$i]['NumeroAviso'];
+			echo "<br>";
+			echo "# Avisar -> ".$avisar;
+			echo"<br>";
+			printf($sqlTurnoActual);
+			if ($avisar == (int)$sqlTurnos[$i]['NumeroAviso']){
+				echo "si funciono";
+			}
+		}
+		//echo ($sqlTurnos[0]['Turno']);
+		//echo "<br>";
+		//echo ($sqlTurnos[0]['NumeroAviso']);
+		//echo "<br>";
+		//print_r($sqlTurnos);
 
 // ----------Valida Que Hallan Mas Turnos Adelante----------
 		if ($sqlTurnoProximo != null) {

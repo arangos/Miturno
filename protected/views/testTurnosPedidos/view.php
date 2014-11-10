@@ -23,6 +23,8 @@ $this->menu=array(
 	'attributes'=>array(
 		'NombreDependencia',
 		'Cod',
+		'NumeroAviso',
 		'Turno',
+		'Empresa',
 	),
 )); ?>

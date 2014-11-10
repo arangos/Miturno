@@ -6,7 +6,9 @@
  * The followings are the available columns in table 'test_turnos_pedidos':
  * @property string $NombreDependencia
  * @property string $Cod
+ * @property integer $NumeroAviso
  * @property integer $Turno
+ * @property string $Empresa
  */
 class TestTurnosPedidos extends CActiveRecord
 {
@@ -26,13 +28,13 @@ class TestTurnosPedidos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('NombreDependencia, Cod, Turno', 'required'),
-			array('Turno', 'numerical', 'integerOnly'=>true),
-			array('NombreDependencia', 'length', 'max'=>30),
+			array('NombreDependencia, Cod, NumeroAviso, Turno, Empresa', 'required'),
+			array('NumeroAviso, Turno', 'numerical', 'integerOnly'=>true),
+			array('NombreDependencia, Empresa', 'length', 'max'=>30),
 			array('Cod', 'length', 'max'=>6),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('NombreDependencia, Cod, Turno', 'safe', 'on'=>'search'),
+			array('NombreDependencia, Cod, NumeroAviso, Turno, Empresa', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,7 +57,9 @@ class TestTurnosPedidos extends CActiveRecord
 		return array(
 			'NombreDependencia' => 'Nombre Dependencia',
 			'Cod' => 'Cod',
+			'NumeroAviso' => 'Numero Aviso',
 			'Turno' => 'Turno',
+			'Empresa' => 'Empresa',
 		);
 	}
 
@@ -79,7 +83,9 @@ class TestTurnosPedidos extends CActiveRecord
 
 		$criteria->compare('NombreDependencia',$this->NombreDependencia,true);
 		$criteria->compare('Cod',$this->Cod,true);
+		$criteria->compare('NumeroAviso',$this->NumeroAviso);
 		$criteria->compare('Turno',$this->Turno);
+		$criteria->compare('Empresa',$this->Empresa,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

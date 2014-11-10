@@ -32,9 +32,21 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'NumeroAviso'); ?>
+		<?php echo $form->textField($model,'NumeroAviso'); ?>
+		<?php echo $form->error($model,'NumeroAviso'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'Turno'); ?>
 		<?php echo $form->textField($model,'Turno'); ?>
 		<?php echo $form->error($model,'Turno'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Empresa'); ?>
+		<?php echo $form->textField($model,'Empresa',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'Empresa'); ?>
 	</div>
 
 	<div class="row buttons">

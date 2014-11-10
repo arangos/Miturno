@@ -22,8 +22,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'NumeroAviso'); ?>
+		<?php echo $form->textField($model,'NumeroAviso'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'Turno'); ?>
 		<?php echo $form->textField($model,'Turno'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'Empresa'); ?>
+		<?php echo $form->textField($model,'Empresa',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div class="row buttons">
