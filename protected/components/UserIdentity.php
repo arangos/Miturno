@@ -25,12 +25,11 @@ public function authenticate()
 		$user = Clientes::model()->find(array('condition'=>"User='$username'"));
 		
 		if(!empty($user)){
-			// descomentar para utlizar password encryptados y borrar linea 30
-			//$hashPass = md5($passwprd);
-			$hashPass = $passwprd;
+			
+			$hashPass = md5($passwprd);
+			
 			if($hashPass == $user->Pass){
-				// authentication is success
-// 				die("you are logged");
+				
 				$this->errorCode=self::ERROR_NONE;
 			}else{
 				$this->errorCode=self::ERROR_PASSWORD_INVALID;

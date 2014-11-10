@@ -89,8 +89,6 @@ class SiteController extends Controller {
 			if ($model->validate () && $model->login ())
 
 				if(Yii::app()->user->Tipo == 'admin'){
-				//$this->render('admin');
-				//$this->renderPartial()
 				$this->redirect(Yii::app()->user->returnUrl=array('admin'));
 			}else if(Yii::app()->user->Tipo == 'empleado')
 				$this->redirect(Yii::app()->user->returnUrl=array('atender'));
